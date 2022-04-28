@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h, initial-scale=1.0" />
+    <title>counter</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">counter</h1>
+    <p style="text-align: center">{{session['counter']}}</p>
+    <div>
+      <a href="/count" style="background-color: blue">Click</a>
+      <a href="/destroy_session" style="background-color: yellowgreen">Reset</a>
+    </div>
+    <form action="/add_count" method="post">
+      <label for="exampleFormControlInput1">number</label>
+      <input type="number" name="count" placeholder="put_number" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
